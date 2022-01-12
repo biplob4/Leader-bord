@@ -1,0 +1,222 @@
+/*--- google-font---- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+/*---- coomon style or utilite ----*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#f3f1ff;
+}
+.container{
+    width: 870px;
+    padding: 30px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    position: relative;
+}
+/*--- header style--- */
+
+header{
+   display: flex;
+   align-items: center;
+   background-color: rgba(0, 0, 255, 0.726);
+   color: #ffff;
+}
+.feader-nev{
+    background-color: rgba(70, 70, 179, 0);
+}
+header h1{
+    margin: 0;
+}
+header img{
+    width: 56px;
+    height: 56px;
+}
+.nev-icon{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.nev li{
+    list-style: none;
+    float: left;
+    margin-right: 40px;
+}
+.nev{
+    display: flex;
+    float: right;
+}
+.nev-img{
+    position: absolute;
+    right: 0px;
+}
+
+/* ------- top-players style -------- */
+.all-title{
+    margin-top: 3px;
+    color: #562EFF;
+    font-size: 25px;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player h3{
+    margin-left: 16px;
+}
+hr{
+    margin: 20px 0px;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+/* ---top blogs styls start----- */
+.top{
+    padding:13px 0px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.blog{
+    display:flex;
+    
+}
+.blog-title{
+    margin-left: 20px;
+    width: 200px;
+}
+.bloge-img img{
+    width: 177px;
+    height: 117px;
+}
+.blog-title h3{
+    font-size: 20px;
+    counter-reset: #000000;
+    margin-top:1px;
+    letter-spacing: 1px;
+}
+.blog-title p{
+    font-size: 18px;
+    color: gray;
+}
+.blog-title p a{
+    text-decoration: none;
+    color: orange;
+}
+/* ---top blogs styls end----- */
+
+/*-- courses style start---- */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.cours {
+    padding: 10px;
+    box-shadow: -1px 1px 7px 0px #888888;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+}
+.cours:first-child{
+    margin-left: 0;
+}
+.coures-thamnel img{
+    width: 224px;
+    height: 104px;
+}
+.coures-duration{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 253px;
+}
+.courec-info p {
+    color: gray;
+}
+
+.courec-info i {
+    color: orange;
+}
+
+.courec-info i:last-child {
+    color: gray;
+}
+
+.coures-time {
+    padding: 0px 14px;
+    border-radius: 50px;
+    background: #FFE4E8;
+}
+
+.courec-info h3 {
+    color: black;
+    font-size: 20px;
+}
+
+.coures-time p {
+    color: #FF7182;
+}
+
+.far fa-clock {
+    color: orange;
+}
+
+/*--- madia-stylseed----- */
+
+  @media only screen and (max-width:688px) {
+    .container{
+        width: 95%;
+    }
+    .courses, .blogs{
+        margin: auto;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top-players{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .player,.blog{
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+/* ----tablet ------*/
+
+@media only screen and (max-width: 992px) and (min-width:689px) {
+    .top-players{
+        grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    .courses {
+        margin: auto;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+   }
+  .blogs{
+    grid-template-columns: repeat(1,1fr);
+    flex-direction: column;
+   }
+   .player,.blog{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container{
+    width: 95%;
+   }
+}
